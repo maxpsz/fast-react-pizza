@@ -17,6 +17,7 @@ const router = createBrowserRouter([
       {
         path: '/menu',
         element: <Menu />,
+        loader: Menu.loader,
       },
       {
         path: '/cart',
