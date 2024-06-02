@@ -1,8 +1,59 @@
-# React + Vite
+# 🍕 Fast React Pizza
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A very simple application where users can order pizzas from a menu.
 
-Currently, two official plugins are available:
+## Feature List
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Cart
+
+- Users can add multiple pizzas to a cart before ordering.
+- Users can mark their order as "priority" for an additional 20% of the cart price.
+
+### Menu
+
+- The pizza menu can change, so it is loaded from an external API.
+
+### Order
+
+- Ordering requires the user's name, phone number, and address.
+- If possible, GPS location should also be provided to make delivery easier.
+- Payments are made on delivery, so no payment processing is necessary in the app.
+- Users can look up their order based on the ID.
+
+### User
+
+- No user accounts or login required.
+- Users just input their names before using the app.
+
+## Tech Stack
+
+- Vite
+- React
+- Tailwind CSS
+- Redux Toolkit
+- React Router
+- React Query
+
+## Installation
+
+1. **Clone the repository**:
+
+   ```sh
+   git clone https://github.com/maxpsz/simple-pizza-ordering-app.git
+   cd simple-pizza-ordering-app
+   ```
+
+2. **Install dependencies**:
+
+   ```sh
+   npm install
+   ```
+
+3. **Start the development server**:
+   ```sh
+   npm run dev
+   ```
+
+## Credits
+
+This project was developed following the course **The Ultimate React Course 2024: React, Next.js, Redux & More** by **Jonas Schmedtmann**.
