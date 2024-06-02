@@ -60,7 +60,7 @@ export const getTotalCartQuantity = (state) => {
 };
 
 export const getTotalCartPrice = (state) => {
-  return state.cart.cart.reduce((sum, item) => sum + item.unitPrice, 0);
+  return state.cart.cart.reduce((sum, item) => sum + item.unitPrice * item.quantity, 0);
 };
 
 export const getCurrentQuantityById = (id) => (state) => {
